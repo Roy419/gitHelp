@@ -51,7 +51,7 @@ git reset --hard 139dcfaa558e3276b30b6b2e5cbbb9c00bbdca96
 2、合并提交  在A和B分支合到C分支之后，能不能把C分支上他后来提交的代码合到B分支，我提交的代码合到A分支。
  git cherry-pick <commit id>
 
-
+3.gitk   图形化 查看版本历史信息
 
 
 
