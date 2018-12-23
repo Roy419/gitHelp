@@ -1,0 +1,54 @@
+
+输入个人信息(代码提交者)
+git config --global user.name "xxxx" 
+git config --global user.email xxxxx@qq.com 
+
+ git rm -rf .idea  删除文件
+ $ git commit -m "aa"  提交文件
+
+  
+git branch  查看分支
+
+ git checkout -b cly2018   创建并切换分支
+
+
+$ git reset --hard HEAD   本地做了修改然后直接删除  再去服务器拉去新的代码
+
+ git checkout  -- AppServer/.project    恢复指定位置文件  
+
+
+1.使用git命令拉取分支代码
+
+命令：git clone -b develop XXX 
+
+其中develop就是分支的名称  xxx是clone的主干
+
+
+ 把本地分支提交给远程服务器
+  git push origin cly2018    cly2018是本地分支名称
+
+查看分支：git branch
+创建分支：git branch <name>
+切换分支：git checkout <name>
+创建+切换分支：git checkout -b <name>
+合并某分支到当前分支：git merge <name>
+删除分支：git branch -d <name>
+
+
+git config --global --list    查看配置
+ 
+
+ https://www.cnblogs.com/ydxblog/p/7988317.html
+cly1994419@gmail.com
+
+
+
+git mv readme cdssd.md   //重命名
+
+1、版本回退
+git reset --hard 139dcfaa558e3276b30b6b2e5cbbb9c00bbdca96
+
+2、合并提交  在A和B分支合到C分支之后，能不能把C分支上他后来提交的代码合到B分支，我提交的代码合到A分支。
+ git cherry-pick <commit id>
+
+           
