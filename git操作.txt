@@ -53,6 +53,8 @@ git reset --hard 139dcfaa558e3276b30b6b2e5cbbb9c00bbdca96
 
 3.gitk   图形化 查看版本历史信息
 
+4 git remote -v 查看远程分支地址
+
 
 
 
