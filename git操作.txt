@@ -3,13 +3,21 @@
 git config --global user.name "xxxx" 
 git config --global user.email xxxxx@qq.com 
 
- git rm -rf .idea  删除文件
+ rm -rf .idea  删除文件
  $ git commit -m "aa"  提交文件
+
 
   
 git branch  查看分支
 
  git checkout -b cly2018   创建并切换分支
+
+ 查看远程分支
+ git branch -a
+
+ 　使用Git下载指定分支命令为：git clone -b 分支名仓库地址
+
+ 　使用Git下载v.2.8.1分支代码，使用命令：git clone -b v2.8.1 https://git.oschina.net/oschina/android-app.git
 
 
 $ git reset --hard HEAD   本地做了修改然后直接删除  再去服务器拉去新的代码
@@ -34,28 +42,7 @@ $ git reset --hard HEAD   本地做了修改然后直接删除  再去服务器拉去新的代码
 合并某分支到当前分支：git merge <name>
 删除分支：git branch -d <name>
 
-
-git config --global --list    查看配置
- 
-
  https://www.cnblogs.com/ydxblog/p/7988317.html
-cly1994419@gmail.com
-
-
-
-git mv readme cdssd.md   //重命名
-
-1、版本回退
-git reset --hard 139dcfaa558e3276b30b6b2e5cbbb9c00bbdca96
-
-2、合并提交  在A和B分支合到C分支之后，能不能把C分支上他后来提交的代码合到B分支，我提交的代码合到A分支。
- git cherry-pick <commit id>
-
-3.gitk   图形化 查看版本历史信息
-
-4 git remote -v 查看远程分支地址
-
-
-
+ 
 
            
