@@ -42,6 +42,8 @@ $ git reset --hard HEAD   本地做了修改然后直接删除  再去服务器拉去新的代码
 合并某分支到当前分支：git merge <name>
 删除分支：git branch -d <name>
 
+查看克隆地址  git remote -v 
+
  https://www.cnblogs.com/ydxblog/p/7988317.html
  
 
