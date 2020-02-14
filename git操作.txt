@@ -44,6 +44,12 @@ $ git reset --hard HEAD   本地做了修改然后直接删除  再去服务器拉去新的代码
 
 查看克隆地址  git remote -v 
 
+ 
+
+git rm -r .idea --cached   
+其中.idea是我想删除的文件夹，所以用了rm -r命令，如果你想删除的是文件，则用rm就行，慎用rm -r！！！！ 
+
+
  https://www.cnblogs.com/ydxblog/p/7988317.html
  
 
