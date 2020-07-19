@@ -12,8 +12,11 @@ git branch  查看分支
 
  git checkout -b cly2018   创建并切换分支
 
- 查看远程分支
+ 查看本地和远程分支
  git branch -a
+ 查看所有远程分支
+ git branch -r
+
 
  　使用Git下载指定分支命令为：git clone -b 分支名仓库地址
 
@@ -55,4 +58,5 @@ git rm -rf --cached .idea
  https://www.cnblogs.com/ydxblog/p/7988317.html
  
 
-           
+  
+
