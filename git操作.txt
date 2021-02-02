@@ -56,6 +56,37 @@ git rm -rf --cached .idea
  git push --set-upstream origin dev(dev表示的是你本地 分支仓库的名称)这个命令就好了。推送本地创建好的分支到远程分支 
 
  https://www.cnblogs.com/ydxblog/p/7988317.html
+
+
+git 删除 远程tag分支
+ git push origin tag -d tagName
+
+git 删除 本地tag分支
+git tag -d tagname
+
+
+#tag
+ 
+1.列出所有tag
+git tag
+ 
+2.列出远程所有tag，注意git版本1.7（包括1.7）一下后边需要加上git仓库地址
+git ls-remote --tags
+ 
+3.创建一个tag
+git tag [-a] tagname
+ 
+4.创建一个加描述的tag
+git tag -a tagname [-m <msg>]
+ 
+5.删除本地tag
+git tag -d tagname
+ 
+6.删除远程tag
+git push origin --delete tag tagname
+ 
+7.删除远程tag，与6不同的是，这是推送一个空的tag覆盖掉原来的tag，以达到删除tag的目的
+git push origin :refs/tags/<tagname>
  
 
   
